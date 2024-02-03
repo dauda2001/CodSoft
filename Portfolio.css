@@ -1,0 +1,360 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'MuseoModerno', cursive;
+    text-decoration: none;
+   list-style: none;
+}
+:root{
+    --text-color:#000000;
+    --bg-color:#e5e5e5;
+    --main-color:#f29494;
+    --second-color:#fff;
+    --other-color:#868686;
+    --big-font:5.5rem;
+    --p-font:1rem;
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+header{
+    width: 100%;
+    height: 100%;
+}
+.logo{
+    color: var(--text-color);
+    font-size: 45px;
+    padding-left: 15px;
+}
+.menu a{
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 20px;
+}
+.menu{
+    margin-right: 100px;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background: var(--second-color);
+
+}
+.logo span{
+    color:var(--main-color);
+}
+.menu a:hover{
+    background: var(--main-color);
+    transition: 0.4s;
+}
+section{
+    min-height: 100vh;
+    padding: 1rem;
+}
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow:column ;
+    padding: 0 15rem;
+}
+.home h3{
+    font-size: 2.5rem;
+    color: var(--text-color);
+}
+.home h1{
+    font-size:5rem;
+    color: var(--text-color);
+}
+.home h1 span{
+    color:var(--main-color);
+}
+.home pre{
+    font-size:1rem;
+    color: var(--text-color);
+    padding: 1rem 0;
+}
+
+#about{
+    padding: 100px 50px;
+}
+.section-info{
+    font-weight: blod;
+    text-align: center;
+    color: var(--text-color);
+}
+.section-info h1{
+    font-size: 50px;
+}
+.section-info p{
+    font-size: 25px;
+}
+.about-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about-left-col{
+    flex-basis: 50%;
+}
+.about-left-col img{
+    width: 100%;
+    padding: 50px;
+}
+.about-right-col{
+    flex-basis: 50%;
+}
+#p-title{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+.info{
+    flex: 1 1 48rem;
+    padding: 2rem 1rem;
+    
+}
+.info h3{
+    font-size: 2rem;
+    color: var(--text-color);
+    padding: 1rem 0;
+    font-weight: normal;
+}
+.info h3 span{
+    font-size: 2rem;
+    color: var(--text-color);
+    padding: 0 .5rem;
+}
+.c-btn{
+    border: none;
+    outline: none;
+    color: var(--text-color);
+    background: var(--main-color);
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.c-btn:hover{
+    background: var(--bg-color)
+}
+#skills{
+    padding: 100px 50px;
+    background: var(--bg-color);
+    background-size: cover;
+}
+.section-info h2{
+    font-size: 50px;
+    color: (--text-color);
+}
+.skills-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: white;
+    margin-top: 20px;
+    padding: 60px;
+}
+.skills-left-col{
+    flex-basis: 50%;
+    text-align: justify;
+}
+.skills-left-col p{
+    font-size: 20px;
+    color: var(--text-color);
+}
+.skills-right-col{
+    flex-basis: 50%;
+}
+progress{
+    width: 80%;
+}
+.progress-div{
+    width: 70%;
+    margin: auto;
+}
+.progress-div p{
+    margin-bottom: 10px;
+    font-size: 20px;
+    padding-left: 80px;
+    text-align: justify;
+    color: var(--text-color);
+}
+#projects{
+    padding: 100px 50px;
+}
+.project-row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+.project-box{
+    background: white;
+    padding: 20px 40px;
+    border-radius: 1rem;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+    transition: all ease 0.5s;
+    cursor: pointer;
+    margin-top: 35px;
+}
+.project-box img{
+    max-width: 100%;
+    height: 200px; 
+}
+.project-box:hover{
+    transform: translateY(-5px) scale(1.1);
+}
+
+#contact {
+    padding: 100px 50px;
+}
+
+section{
+    min-height: 100vh;
+    padding: 1rem;
+}
+.heading{
+    text-align: center;
+    margin: 0 6rem;
+    font-size: 4rem;
+    padding: 1rem;
+    border-bottom: .1rem solid #fff4;
+    color: var(--text-color);
+}
+.heading span{
+    color: var(--text-color);
+}
+
+.contact .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact .row .content{
+     flex: 1 1 30rem;
+     padding: 4rem;
+     padding-bottom: 0;
+}
+
+.contact .row form{
+    flex: 1 1 45rem;
+    padding: 2rem;
+    margin: 2rem;
+    margin-bottom: 4rem;
+}
+.contact .row form .box{
+    padding: 1.5rem;
+    margin: 1rem 0;
+    background:var(--bg-color) ;
+    color: var(--text-color);
+    text-transform: none;
+    font-size:1.7rem ;
+    width: 100%;
+}
+
+.contact .row form .box::placeholder{
+    text-transform: capitalize;
+}
+.contact .row form .message{
+    height: 15rem;
+    resize: none ;
+}
+.contact .row .content .titel{
+    text-transform: uppercase;
+    color: var(--text-color);
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+.contact .row .content .info h3{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: var(--text-color);
+    padding: 1rem 0;
+    font-weight: normal;
+}
+.contact .row .content .info h3 i{
+    padding-right: 1rem;
+    color: var(--main-color);
+}
+
+
+
+
+
+@media (max-width:1200px) {
+    html{ 
+        font-size:55%; 
+        } 
+        .home{
+            padding: 1rem;
+        }
+   }
+
+   @media (max-width:991px){
+    header{
+        left: -120%;
+    }
+    #menu{
+        display: block;
+    }
+    header.toggle{
+        left: 0%;
+    }
+    body{
+        padding: 0;
+    }
+
+   }
+   @media (max-width:768px){
+    html{
+        font-size: 50%;
+    }
+
+   }
+   @media (max-width:400px){
+    header{
+        width: 100vw;
+    }
+    .heading{
+        margin: 0 3rem;
+    }
+    .about .section-info .about-row .about-left-col .about-right-col .info{
+        width: 100%;
+    }
+    .skills .section-info .skills-row .skills-left-col .skills-right-col .progress-div{
+        width: 100%;
+    }
+    .projects .section-info .project-row .project-box img{
+        transform: scale(1.2);
+    }
+    }
+        
+     .top{
+        position: fixed;
+        bottom: 7.5rem; right: 2rem;
+        z-index: 100;
+        display: none;
+     }  
+    
+        
